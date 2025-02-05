@@ -1,28 +1,23 @@
 import java.io.FileWriter;
 import java.io.IOException;
-
-public class KSortTester {
+class KSortTester {
     private SortingAlgorithm algorithm;
 
     public KSortTester(SortingAlgorithm algorithm) {
         this.algorithm = algorithm;
     }
 
-    // Run the sorting algorithm and write the runtime to a file
-    public void testToFile(int[] data, int numTests, FileWriter writer) throws IOException {
-        long totalTime = 0;
-        
-        // Run the test `numTests` times to get an average time
-        for (int i = 0; i < numTests; i++) {
-            int[] testData = data.clone();  // Clone the data to avoid sorting the same array repeatedly
-            long startTime = System.nanoTime();
-            algorithm.sorty(testData);  // Sort the data using the algorithm
-            long endTime = System.nanoTime();
-            totalTime += (endTime - startTime);
-        }
+    public void testToFile(int[] data, int size, FileWriter writer) throws IOException {
+        // Run the sorting algorithm once and measure the time
+        int[] dataCopy = data.clone();  // Ensure sorting on the original data
+        long startTime = System.nanoTime();
+        algorithm.sorty(dataCopy);  // Sorting the data
+        long endTime = System.nanoTime();
 
-        // Write the average time to the file
-        long avgTime = totalTime / numTests;
-        writer.write("Average time for " + algorithm.getClass().getSimpleName() + ": " + avgTime + " ns\n");
+        // Calculate the time taken in milliseconds
+        double timeMs = (endTime - startTime) / 1_000_000.0;
+
+        // Write the result formatted with 12 decimal places
+        writer.write(String.format("Average time for sorting %d elements: %.12f ms\n", size, timeMs));
     }
 }

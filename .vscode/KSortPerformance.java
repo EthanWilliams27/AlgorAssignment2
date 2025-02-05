@@ -20,31 +20,31 @@ public class KSortPerformance {
 
         int[] sizes = {100, 500, 1000, 2000, 5000, 10000, 20000, 75000, 150000};
 
-        String outputFile = "KSorting_performance_report.txt";
+        String outputFile = "KsSorting_performance_report.txt";
 
         try (FileWriter writer = new FileWriter(outputFile)) {
-            writer.write("Sorting Performance Comparison - Using 10-Sorted Data\n");
-            writer.write("\n\n");
+            writer.write("Sorting Performance Comparison\n");
+            writer.write("=============================\n\n");
 
-        
             for (int size : sizes) {
-                writer.write("\nTesting size " + size + " elements:\n");
+                writer.write("Testing size " + size + " elements:\n");
 
-              
                 int[] kSortedData = generateKSortedData(size);
 
                 writer.write("Bubble Sort:\n");
-                bubbleTester.testToFile(kSortedData, 20, writer);
+                bubbleTester.testToFile(kSortedData, size, writer);
                 writer.write("Quick Sort:\n");
-                quickTester.testToFile(kSortedData, 20, writer);
+                quickTester.testToFile(kSortedData, size, writer);
                 writer.write("Insertion Sort:\n");
-                insertionTester.testToFile(kSortedData, 20, writer);
+                insertionTester.testToFile(kSortedData, size, writer);
                 writer.write("Merge Sort:\n");
-                mergeTester.testToFile(kSortedData, 20, writer);
+                mergeTester.testToFile(kSortedData, size, writer);
                 writer.write("Selection Sort:\n");
-                selectionTester.testToFile(kSortedData, 20, writer);
+                selectionTester.testToFile(kSortedData, size, writer);
                 writer.write("Shell Sort:\n");
-                shellTester.testToFile(kSortedData, 20, writer);
+                shellTester.testToFile(kSortedData, size, writer);
+
+                writer.write("\n"); // Add a line break after each set of results
             }
 
             System.out.println("Performance report generated successfully.");
@@ -53,10 +53,10 @@ public class KSortPerformance {
             e.printStackTrace();
         }
     }
+
     public static int[] generateKSortedData(int size) {
         int[] data = new int[size];
-        
-        
+
         for (int i = 0; i < size; i++) {
             data[i] = (int)(Math.random() * 1000);
         }

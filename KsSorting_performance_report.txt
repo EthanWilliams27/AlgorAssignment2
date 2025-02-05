@@ -1,0 +1,129 @@
+Sorting Performance Comparison
+=============================
+
+Testing size 100 elements:
+Bubble Sort:
+Average time for sorting 100 elements: 0.108300000000 ms
+Quick Sort:
+Average time for sorting 100 elements: 0.032300000000 ms
+Insertion Sort:
+Average time for sorting 100 elements: 0.016500000000 ms
+Merge Sort:
+Average time for sorting 100 elements: 0.061100000000 ms
+Selection Sort:
+Average time for sorting 100 elements: 0.075100000000 ms
+Shell Sort:
+Average time for sorting 100 elements: 0.021500000000 ms
+
+Testing size 500 elements:
+Bubble Sort:
+Average time for sorting 500 elements: 1.505600000000 ms
+Quick Sort:
+Average time for sorting 500 elements: 0.480600000000 ms
+Insertion Sort:
+Average time for sorting 500 elements: 0.137400000000 ms
+Merge Sort:
+Average time for sorting 500 elements: 0.289000000000 ms
+Selection Sort:
+Average time for sorting 500 elements: 1.095800000000 ms
+Shell Sort:
+Average time for sorting 500 elements: 0.139300000000 ms
+
+Testing size 1000 elements:
+Bubble Sort:
+Average time for sorting 1000 elements: 0.793200000000 ms
+Quick Sort:
+Average time for sorting 1000 elements: 0.146200000000 ms
+Insertion Sort:
+Average time for sorting 1000 elements: 0.425900000000 ms
+Merge Sort:
+Average time for sorting 1000 elements: 0.116500000000 ms
+Selection Sort:
+Average time for sorting 1000 elements: 0.387600000000 ms
+Shell Sort:
+Average time for sorting 1000 elements: 0.317200000000 ms
+
+Testing size 2000 elements:
+Bubble Sort:
+Average time for sorting 2000 elements: 2.373600000000 ms
+Quick Sort:
+Average time for sorting 2000 elements: 0.901800000000 ms
+Insertion Sort:
+Average time for sorting 2000 elements: 0.655200000000 ms
+Merge Sort:
+Average time for sorting 2000 elements: 0.296500000000 ms
+Selection Sort:
+Average time for sorting 2000 elements: 0.586300000000 ms
+Shell Sort:
+Average time for sorting 2000 elements: 0.608100000000 ms
+
+Testing size 5000 elements:
+Bubble Sort:
+Average time for sorting 5000 elements: 1.882700000000 ms
+Quick Sort:
+Average time for sorting 5000 elements: 0.700700000000 ms
+Insertion Sort:
+Average time for sorting 5000 elements: 0.483000000000 ms
+Merge Sort:
+Average time for sorting 5000 elements: 0.518500000000 ms
+Selection Sort:
+Average time for sorting 5000 elements: 3.577400000000 ms
+Shell Sort:
+Average time for sorting 5000 elements: 0.986000000000 ms
+
+Testing size 10000 elements:
+Bubble Sort:
+Average time for sorting 10000 elements: 7.327100000000 ms
+Quick Sort:
+Average time for sorting 10000 elements: 2.870600000000 ms
+Insertion Sort:
+Average time for sorting 10000 elements: 0.392500000000 ms
+Merge Sort:
+Average time for sorting 10000 elements: 0.720400000000 ms
+Selection Sort:
+Average time for sorting 10000 elements: 14.111300000000 ms
+Shell Sort:
+Average time for sorting 10000 elements: 0.227300000000 ms
+
+Testing size 20000 elements:
+Bubble Sort:
+Average time for sorting 20000 elements: 29.605900000000 ms
+Quick Sort:
+Average time for sorting 20000 elements: 7.527700000000 ms
+Insertion Sort:
+Average time for sorting 20000 elements: 0.444600000000 ms
+Merge Sort:
+Average time for sorting 20000 elements: 1.604500000000 ms
+Selection Sort:
+Average time for sorting 20000 elements: 55.849000000000 ms
+Shell Sort:
+Average time for sorting 20000 elements: 0.383900000000 ms
+
+Testing size 75000 elements:
+Bubble Sort:
+Average time for sorting 75000 elements: 409.289300000000 ms
+Quick Sort:
+Average time for sorting 75000 elements: 32.920300000000 ms
+Insertion Sort:
+Average time for sorting 75000 elements: 2.670200000000 ms
+Merge Sort:
+Average time for sorting 75000 elements: 7.031600000000 ms
+Selection Sort:
+Average time for sorting 75000 elements: 782.325000000000 ms
+Shell Sort:
+Average time for sorting 75000 elements: 0.971000000000 ms
+
+Testing size 150000 elements:
+Bubble Sort:
+Average time for sorting 150000 elements: 1799.643900000000 ms
+Quick Sort:
+Average time for sorting 150000 elements: 69.324500000000 ms
+Insertion Sort:
+Average time for sorting 150000 elements: 6.489700000000 ms
+Merge Sort:
+Average time for sorting 150000 elements: 7.222700000000 ms
+Selection Sort:
+Average time for sorting 150000 elements: 3184.107000000000 ms
+Shell Sort:
+Average time for sorting 150000 elements: 1.829500000000 ms
+
